@@ -1,0 +1,134 @@
+# 📊 Fundamentos de Ciência de Dados
+
+Repositório destinado às práticas e implementações desenvolvidas na disciplina de **Fundamentos de Ciência de Dados** (ULBRA). O objetivo deste repositório é aplicar conceitos estatísticos e matemáticos fundamentais utilizando **Python** e **Jupyter Notebooks**.
+
+---
+
+## 📌 Conteúdo do Projeto
+
+O arquivo principal [`Calculos.ipynb`](Calculos.ipynb) possui implementações manuais em Python para diversas operações e medidas estatísticas de tendência central e somatórios:
+
+1. **Somatório ao Quadrado (`somantorio_ao_quadrado(n)`)**:
+   - Calcula a soma dos quadrados dos números inteiros de $0$ até $n$:
+     $$\sum_{i=0}^{n} i^2$$
+
+2. **Soma de Dados (`soma_dados(conjunto)`)**:
+   - Realiza o somatório simples dos elementos de um determinado conjunto numérico:
+     $$\sum x_i$$
+
+3. **Média Aritmética (`media_aritmetica(conjunto)`)**:
+   - Calcula a média simples de uma amostra/conjunto de dados:
+     $$\bar{x} = \frac{\sum x_i}{n}$$
+
+4. **Soma dos Quadrados dos Dados (`soma_dados_ao_quadradro(conjunto)`)**:
+   - Calcula o somatório dos elementos elevados ao quadrado em um conjunto:
+     $$\sum x_i^2$$
+
+5. **Média Harmônica (`media_harmonica(conjunto)`)**:
+   - Média útil em situações que envolvem taxas e proporções (como velocidades médias):
+     $$H = \frac{n}{\sum \frac{1}{x_i}}$$
+
+6. **Média Geométrica (`media_geometrica(conjunto)`)**:
+   - Média aplicável no cálculo de taxas de crescimento e percentuais acumulados:
+     $$G = \sqrt[n]{\prod_{i=1}^{n} x_i} = \left(\prod_{i=1}^{n} x_i\right)^{\frac{1}{n}}$$
+
+7. **Média Quadrática (`media_quadratica(conjunto)`)**:
+   - Conhecida também como *Root Mean Square* (RMS), muito empregada em análises estatísticas e físicas:
+     $$RMS = \sqrt{\frac{\sum x_i^2}{n}}$$
+
+---
+
+## 📁 Estrutura do Repositório
+
+```text
+data-science-fundamentals/
+│
+├── Calculos.ipynb     # Notebook com a implementação das funções estatísticas
+├── requirements.txt   # Dependências do projeto (Jupyter, IPykernel, etc.)
+├── .gitignore         # Arquivos ignorados pelo controle de versão
+└── README.md          # Documentação do projeto
+```
+
+---
+
+## 🚀 Como Executar o Projeto
+
+### Pré-requisitos
+
+- **Python 3.8+** instalado na sua máquina.
+- Git instalado.
+
+### Passo a Passo
+
+1. **Clonar o repositório** (caso tenha baixado via git):
+   ```bash
+   git clone <URL_DO_SEU_REPOSITORIO>
+   cd data-science-fundamentals
+   ```
+
+2. **Criar e ativar um ambiente virtual** *(opcional, mas recomendado)*:
+   - **Linux / macOS:**
+     ```bash
+     python3 -m venv venv
+     source venv/bin/activate
+     ```
+   - **Windows:**
+     ```cmd
+     python -m venv venv
+     venv\Scripts\activate
+     ```
+
+3. **Instalar as dependências**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Abrir o Jupyter Notebook**:
+   ```bash
+   jupyter notebook
+   ```
+   ou abra a pasta diretamente no **VS Code** com a extensão do Jupyter instalada e selecione o arquivo [`Calculos.ipynb`](Calculos.ipynb).
+
+---
+
+## 📤 Como Subir o Projeto para o GitHub
+
+Se este é o primeiro commit do seu repositório local, siga os passos abaixo no terminal:
+
+1. **Inicializar o Git no repositório local**:
+   ```bash
+   git init
+   ```
+
+2. **Adicionar os arquivos ao staging**:
+   ```bash
+   git add .
+   ```
+
+3. **Criar o primeiro commit**:
+   ```bash
+   git commit -m "feat: inicializa projeto com Calculos.ipynb, README e configs"
+   ```
+
+4. **Renomear a branch principal para `main`**:
+   ```bash
+   git branch -M main
+   ```
+
+5. **Conectar ao repositório remoto no GitHub**:
+   *(Substitua a URL abaixo pelo link do seu repositório criado no GitHub)*
+   ```bash
+   git remote add origin https://github.com/SEU_USUARIO/data-science-fundamentals.git
+   ```
+
+6. **Enviar os arquivos para o GitHub**:
+   ```bash
+   git push -u origin main
+   ```
+
+---
+
+## 📝 Licença e Autoria
+
+Desenvolvido para fins acadêmicos na Universidade Luterana do Brasil (ULBRA).  
+Sinta-se à vontade para utilizar o código para estudos!
