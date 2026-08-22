@@ -48,6 +48,10 @@ O arquivo principal [`Calculos.ipynb`](Calculos.ipynb) possui implementações m
     - Identifica o elemento (ou elementos) de maior frequência no conjunto. Suporta distribuições **unimodais**, **multimodais** e identifica casos **amodais**:
       $$Mo = \text{valor(es) com maior frequência de ocorrência em } X$$
 
+11. **Ponto Médio (`ponto_medio(conjunto_ou_a, b=None)`)**:
+    - Calcula o ponto médio tanto de um conjunto de dados (*Midrange*) quanto de um intervalo de classe $[a, b]$:
+      $$PM = \frac{\min(X) + \max(X)}{2} \quad \text{ou} \quad PM = \frac{a + b}{2}$$
+
 ---
 
 ## 📁 Estrutura do Repositório
