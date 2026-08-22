@@ -40,6 +40,10 @@ O arquivo principal [`Calculos.ipynb`](Calculos.ipynb) possui implementações m
    - Calcula a média atribuindo diferentes pesos a cada valor:
      $$\bar{x}_w = \frac{\sum (x_i \cdot w_i)}{\sum w_i}$$
 
+9. **Mediana (`mediana(conjunto)`)**:
+   - Elemento central de um conjunto numérico ordenado. Se a quantidade $n$ de elementos for ímpar, retorna o valor central; se $n$ for par, resulta na média dos dois valores centrais:
+     $$Md = \begin{cases} x_{\left(\frac{n+1}{2}\right)}, & \text{se } n \text{ for ímpar} \\[6pt] \frac{x_{\left(\frac{n}{2}\right)} + x_{\left(\frac{n}{2} + 1\right)}}{2}, & \text{se } n \text{ for par} \end{cases}$$
+
 ---
 
 ## 📁 Estrutura do Repositório
