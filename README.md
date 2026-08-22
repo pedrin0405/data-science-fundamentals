@@ -54,12 +54,27 @@ O arquivo principal [`Calculos.ipynb`](Calculos.ipynb) possui implementações m
 
 ---
 
+## 💡 Casos de Uso Práticos no Dia a Dia
+
+| Medida Estatística | Exemplo Prático do Mundo Real | Por que usar essa medida? |
+| :--- | :--- | :--- |
+| **Média Aritmética** | Média de notas escolares sem pesos (ex: `7.5, 8.0, 6.5, 9.0`) | Avaliação simples quando todas as observações têm a mesma importância. |
+| **Média Ponderada** | Nota final da faculdade onde provas têm peso maior que trabalhos | Quando determinados dados têm importância/peso diferente na média. |
+| **Média Harmônica** | Velocidade média em percursos de mesma distância (ex: ida a 60 km/h e volta a 40 km/h) | Correta para taxas e velocidades. A média simples daria 50 km/h (incorreto), enquanto a harmônica dá 48 km/h (correto). |
+| **Média Geométrica** | Rentabilidade acumulada de investimentos ao longo dos anos (+10%, +20%, -5%) | Ideal para valores multiplicativos, percentuais acumulados e taxas de crescimento populacional/financeiro. |
+| **Média Quadrática (RMS)** | Medição de tensão elétrica alternada em Volts (ex: `115V, -110V, 108V, -112V`) | Muito usada na engenharia elétrica e acústica para calcular a amplitude/energia de sinais que oscilam entre positivo e negativo. |
+| **Mediana** | Renda salarial de um bairro ou empresa com grande discrepância (ex: 5 estagiários e 1 CEO) | A média daria um salário irreal de R$ 18.500; a mediana entrega o valor realista do cidadão comum (R$ 2.350). |
+| **Moda** | Controle de estoque de loja (tamanho de vestuário mais vendido: `"P"`, `"M"`, `"G"`) | Descobre qual item tem a maior demanda para guiar decisões de compra e reabastecimento. |
+| **Ponto Médio** | Estimativa rápida da temperatura média diária (Mínima de 14°C e Máxima de 28°C) | Determina a posição central entre os dois limites extremos de uma amostragem. |
+
+---
+
 ## 📁 Estrutura do Repositório
 
 ```text
 data-science-fundamentals/
 │
-├── Calculos.ipynb     # Notebook com a implementação das funções estatísticas
+├── Calculos.ipynb     # Notebook com a implementação e casos práticos do dia a dia
 ├── requirements.txt   # Dependências do projeto (Jupyter, IPykernel, etc.)
 ├── .gitignore         # Arquivos ignorados pelo controle de versão
 └── README.md          # Documentação do projeto
