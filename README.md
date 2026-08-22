@@ -36,6 +36,10 @@ O arquivo principal [`Calculos.ipynb`](Calculos.ipynb) possui implementações m
    - Conhecida também como *Root Mean Square* (RMS), muito empregada em análises estatísticas e físicas:
      $$RMS = \sqrt{\frac{\sum x_i^2}{n}}$$
 
+8. **Média Ponderada (`media_ponderada(valores, pesos)`)**:
+   - Calcula a média atribuindo diferentes pesos a cada valor:
+     $$\bar{x}_w = \frac{\sum (x_i \cdot w_i)}{\sum w_i}$$
+
 ---
 
 ## 📁 Estrutura do Repositório
@@ -93,36 +97,13 @@ data-science-fundamentals/
 
 ## 📤 Como Subir o Projeto para o GitHub
 
-Se este é o primeiro commit do seu repositório local, siga os passos abaixo no terminal:
+Seu repositório local já foi inicializado e comitado na branch `main`. Para enviar para o GitHub, siga apenas os passos 5 e 6 abaixo no terminal:
 
-1. **Inicializar o Git no repositório local**:
-   ```bash
-   git init
-   ```
+1. **Criar um novo repositório no GitHub** (no site github.com) sem inicializar com README ou gitignore.
 
-2. **Adicionar os arquivos ao staging**:
+2. **Conectar e Enviar para o Repositório Remoto**:
    ```bash
-   git add .
-   ```
-
-3. **Criar o primeiro commit**:
-   ```bash
-   git commit -m "feat: inicializa projeto com Calculos.ipynb, README e configs"
-   ```
-
-4. **Renomear a branch principal para `main`**:
-   ```bash
-   git branch -M main
-   ```
-
-5. **Conectar ao repositório remoto no GitHub**:
-   *(Substitua a URL abaixo pelo link do seu repositório criado no GitHub)*
-   ```bash
-   git remote add origin https://github.com/SEU_USUARIO/data-science-fundamentals.git
-   ```
-
-6. **Enviar os arquivos para o GitHub**:
-   ```bash
+   git remote add origin https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git
    git push -u origin main
    ```
 
