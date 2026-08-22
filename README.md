@@ -6,7 +6,7 @@ Repositório destinado às práticas e implementações desenvolvidas na discipl
 
 ## 📌 Conteúdo do Projeto
 
-O arquivo principal [`Calculos.ipynb`](Calculos.ipynb) possui implementações manuais em Python para diversas operações e medidas estatísticas de tendência central e somatórios:
+O arquivo principal [`Calculos.ipynb`](Calculos.ipynb) possui implementações manuais em Python (sem bibliotecas externas) para diversas operações e medidas estatísticas de tendência central e somatórios:
 
 1. **Somatório ao Quadrado (`somantorio_ao_quadrado(n)`)**:
    - Calcula a soma dos quadrados dos números inteiros de $0$ até $n$:
@@ -43,6 +43,10 @@ O arquivo principal [`Calculos.ipynb`](Calculos.ipynb) possui implementações m
 9. **Mediana (`mediana(conjunto)`)**:
    - Elemento central de um conjunto numérico ordenado. Se a quantidade $n$ de elementos for ímpar, retorna o valor central; se $n$ for par, resulta na média dos dois valores centrais:
      $$Md = \begin{cases} x_{\left(\frac{n+1}{2}\right)}, & \text{se } n \text{ for ímpar} \\[6pt] \frac{x_{\left(\frac{n}{2}\right)} + x_{\left(\frac{n}{2} + 1\right)}}{2}, & \text{se } n \text{ for par} \end{cases}$$
+
+10. **Moda (`moda(conjunto)`)**:
+    - Identifica o elemento (ou elementos) de maior frequência no conjunto. Suporta distribuições **unimodais**, **multimodais** e identifica casos **amodais**:
+      $$Mo = \text{valor(es) com maior frequência de ocorrência em } X$$
 
 ---
 
